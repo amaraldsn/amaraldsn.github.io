@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="imagens/logoamaral1.png" type="image/x-icon">
+
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbC2bKJj/yT37i44rZReo3zhnl+F9V1m/1z4qiW2/6L1pW+zM+b/gN6Zt9XX5aLq8GaY/fMbi+z4b9a6+Qz7yJ/oQ+tWqS+4c+BVTN/d/zqwQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Amaral Designer</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="profile container">
+    <!-- Theme button -->
+    <div>
+      <button id="btn-ru">🇷🇺</button>
+      <button id="btn-en">🇺🇸</button>
+      <button id="btn-et">🇪🇪</button>
+    </div>
+
+    <script>
+      const btnRU = document.getElementById('btn-ru');
+      const btnEN = document.getElementById('btn-en');
+      const btnET = document.getElementById('btn-et');
+
+      btnRU.addEventListener('click', () => {
+          window.location.href = 'index_ru.html';
+      });
+
+      btnEN.addEventListener('click', () => {
+          window.location.href = 'index_en.html';
+      });
+
+      btnET.addEventListener('click', () => {
+          window.location.href = 'index_et.html';
+      });
+    </script>
+
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+    <div class="profile__container grid">
+      <div class="profile__data">
+        <div class="profile__border">
+          <img src="imagens/capanova.png" alt="">
+          <div class="profile__perfil">
+            <!-- Insert your image, according to the example size of the portfolio -->
+            
+          </div>
+        </div>
+
+        <h2 class="profile__name">Amaral Designer</h2>
+        <h3 class="profile__profession">Social Media e Thumbnails</h3>
+
+        <ul class="profile__social">
+          <a href="https://www.instagram.com/amaraldsn" target="_blank" class="profile__social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/natanael-amaral-a8661b264/" target="_blank" class="profile__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="https://github.com/amaraldsn" target="_blank" class="profile__social-link">
+            <i class="ri-github-line"></i>
+          </a>
+          <a href="https://www.behance.net/amaraldzn" target="_blank" class="profile__social-link">
+            <i class="ri-behance-fill"></i>
+          <a href="https://www.youtube.com/@amaraldsn" target="_blank" class="profile__social-link">
+            <i class="ri-youtube-fill"></i>
+          </a>
+          <a href="https://vk.com/id736944631" target="_blank" class="profile__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4.26 4.26C3 5.532 3 7.566 3 11.64v.72c0 4.068 0 6.102 1.26 7.38C5.532 21 7.566 21 11.64 21h.72c4.068 0 6.102 0 7.38-1.26C21 18.468 21 16.434 21 12.36v-.72c0-4.068 0-6.102-1.26-7.38C18.468 3 16.434 3 12.36 3h-.72C7.572 3 5.538 3 4.26 4.26m1.776 4.218H8.1c.066 3.432 1.578 4.884 2.778 5.184V8.478h1.938v2.958c1.182-.126 2.43-1.476 2.85-2.964h1.932a5.72 5.72 0 0 1-2.628 3.738a5.92 5.92 0 0 1 3.078 3.756h-2.13c-.456-1.422-1.596-2.526-3.102-2.676v2.676h-.24c-4.104 0-6.444-2.808-6.54-7.488"/></svg>
+          </a>
+          <!-- <a href="https://amaraldzn.github.io/ecommerce/" target="_blank" class="profile__social-link">
+            <i class="ri-store-3-fill"></i>
+          </a> -->
+        </ul>
+      </div>
+
+      <div class="profile__info grid">
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">3</h3>
+          <p class="profile__info-description">
+            anos de <br> experiência
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">+30</h3>
+          <p class="profile__info-description">
+            projetos <br> completados
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">+50</h3>
+          <p class="profile__info-description">Clientes <br> satisfeitos</p>
+        </div>
+      </div>
+
+      <div class="profile__buttons">
+        <!-- Inserir zap zap -->
+        <a download="" href="https://api.whatsapp.com/send/?phone=5583993285709&text&type=phone_number&app_absent=0" class="button">
+          Transforme sua marca <i class="ri-whatsapp-line"></i>
+        </a>
+
+        <div class="profile__buttons-small">
+          <!-- Insert a real number plus country code -->
+          <a href="https://t.me/amaraldsn" target="_blank" class="button button__small button__gray">
+            <i class="ri-telegram-fill"></i>
+          </a>
+          <!-- Insert your brand name or profile -->
+          <a href="https://ig.me/m/amaraldsn" target="_blank" class="button button__small button__gray">
+            <i class="ri-messenger-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container">
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          Projetos
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Habilidades
+        </button>
+      </ul>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+        <div class="projects__content grid filters__active" data-content id="projects">
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="imagens/thumbnailsdev.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Thumbnails</span>
+                <h3 class="projects__title">Portfólio Tecnologia</h3>
+                <a href="https://www.behance.net/gallery/204625009/PORTFOLIO-THUMBNAILS-Tecnologia" class="projects__button button button__small">
+                  <i class="ri-link" style="margin-right: 5px;"></i>  Clique aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="imagens/thumbnailsgamers.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Thumbnails</span>
+                <h3 class="projects__title">Portfólio Gamers/GFX</h3>
+                <a href="https://www.behance.net/gallery/204626363/PORTFOLIO-THUMBNAILS-2-GFX-Gamers" class="projects__button button button__small">
+                  <i class="ri-link" style="margin-right: 5px;"></i>  Clique aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="imagens/thumbnaillojainfo.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Social Media</span>
+                <h3 class="projects__title">Loja Informática</h3>
+                <a href="https://www.behance.net/gallery/204762891/Social-Media-Loja-de-Informatica-Manutencao" class="projects__button button button__small">
+                  <i class="ri-link" style="margin-right: 5px;"></i>  Clique aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="imagens/thumbnailtec3.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Thumbnails</span>
+                <h3 class="projects__title">Portfólio Tecnologia</h3>
+                <a href="https://www.behance.net/gallery/206833235/PORTFOLIO-THUMBNAILS-3-Tecnologia" class="projects__button button button__small">
+                  <i class="ri-link" style="margin-right: 5px;"></i>  Clique aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="imagens/thumbnailfutebol.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Social Media</span>
+                <h3 class="projects__title">Portfólio Futebol</h3>
+                <a href="https://www.behance.net/gallery/209783007/Social-Media-Flyers-Futebol" class="projects__button button button__small">
+                  <i class="ri-link" style="margin-right: 5px;"></i>  Clique aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="imagens/thumbnailpetshop.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Social Media</span>
+                <h3 class="projects__title">Portfólio Petshop</h3>
+                <a href="https://www.behance.net/gallery/208476507/Social-Media-Petshop" class="projects__button button button__small">
+                  <i class="ri-link" style="margin-right: 5px;"></i>  Clique aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="imagens/thumbnailhamburgueria.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Social Media</span>
+                <h3 class="projects__title">Portfólio Hamburgueria</h3>
+                <a href="https://www.behance.net/gallery/208036359/Social-Media-Lanchonete-Hamburgueria" class="projects__button button button__small">
+                  <i class="ri-link" style="margin-right: 5px;"></i>  Clique aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Adicionar outros cards de projetos, se necessário -->
+
+         
+
+        </div>
+
+        <!--=============== SKILLS ===============-->
+        <div class="skills__content grid" data-content id="skills">
+          <div class="skills__area">
+            <h3 class="skills__title">Ferramentas Design</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">GIMP</h3>
+                    <span class="skills__level">Avançado</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Figma</h3>
+                    <span class="skills__level">Intermediário</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Canva</h3>
+                    <span class="skills__level">Avançado</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Photoshop</h3>
+                    <span class="skills__level">Intermediário</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Inkscape</h3>
+                    <span class="skills__level">Intermediário</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Illustrator</h3>
+                    <span class="skills__level">Iniciante</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__area">
+            <h3 class="skills__title">Habilidades extras</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">GNU/Linux</h3>
+                    <span class="skills__level">Intermediário</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">HTML/CSS</h3>
+                    <span class="skills__level">Iniciante</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">CyberSecurity</h3>
+                    <span class="skills__level">Iniciante</span>
+                  </div>
+                </div>
+              </div>
+
+              <!--<div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Node Js</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; Amaral Designer. All rigths reserved
+    </span>
+  </footer>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
